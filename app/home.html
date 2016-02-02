@@ -17,6 +17,18 @@
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway">
 </head>
+    
+    <script> 
+
+
+function playPause()
+{ 
+    var myVideo=document.getElementById("video_background"); 
+if (myVideo.paused) 
+  myVideo.play(); 
+else 
+  myVideo.pause(); 
+} </script>
 
 <body>
     
@@ -42,6 +54,12 @@
                     Playground
                 </a>
             </li>    
+          <li>
+                <a href="#" onClick="playPause();"> 
+                    <i class="fa fa-play-circle-o"></i>
+                    iOs
+                </a>
+            </li> 
        </ul>
       
     </div><!-- /.navbar-collapse -->
@@ -49,7 +67,7 @@
 </nav>
 
     <div class="main" >
-        <video id="video_background" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" src="images/coming_soon.mp4"> 
+        <video id="video_background" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0" type="video/mp4" src="images/coming_soon.mp4"> 
             
         </video>
     
